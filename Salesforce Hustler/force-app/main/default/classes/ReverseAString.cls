@@ -1,3 +1,10 @@
+/**
+ * @description       : 
+ * @author            : Meer Hassan
+ * @group             : 
+ * @last modified on  : 06-07-2026
+ * @last modified by  : Meer Hassan
+**/
 public with sharing class ReverseAString {
     public static String reverseString(String stringValue) {
         String reversedValue = '';
