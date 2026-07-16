@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Laz Loading">
+        <lightning-datatable
+            key-field="Id"
+            data={data}
+            columns={columns}
+            onloadmore={handleLoadMore}
+            enable-infinite-loading
+            is-loading={isLoading}>
+        </lightning-datatable>
+    </lightning-card>
+</template>
