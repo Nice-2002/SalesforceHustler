@@ -1,5 +1,5 @@
 # SalesforceHustler
 
-- **Problem Statement:** Write a method to reverse a string without using any inbuilt methods or functions in Apex.
+- **Problem Statement:** Create an LWC component to show a list of records with inline editing (similar to the standard datatable) and save changes in bulk..
 
-- Refer to **ReverseAString** class for the soulution.
+- Refer to **AccountController** class and **inlineEditAccounts** lwc component for the solution.
