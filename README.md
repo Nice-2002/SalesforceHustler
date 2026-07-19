@@ -1,5 +1,5 @@
 # SalesforceHustler
 
-- **Problem Statement:** Write a method to reverse a string without using any inbuilt methods or functions in Apex.
+- **Problem Statement:** Implement lazy loading in lwc.
 
-- Refer to **ReverseAString** class for the soulution.
+- Refer to **lazyLoadingDatatable** lwc component for the soulution.
