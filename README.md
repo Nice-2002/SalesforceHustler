@@ -1,5 +1,9 @@
 # SalesforceHustler
 
-- **Problem Statement:** Write a method to reverse a string without using any inbuilt methods or functions in Apex.
+- **Problem Statement:** Create an LWC component to search contacts based on user's input.
 
-- Refer to **ReverseAString** class for the soulution.
+- Refer to **contactSearch** LWC component for the soulution.
+
+- **Features:**
+  - Disable the Search button until the user enters at least 2 characters.
+  - Allow users to press Enter in the search box to trigger the search instead of clicking the button.
