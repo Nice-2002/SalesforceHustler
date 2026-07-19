@@ -1,0 +1,47 @@
+<template>
+    <lightning-card>
+        <!--p class="slds-m-left_medium">Search Contacts</p-->
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-medium">
+                <lightning-input 
+                    label="Search Contact" 
+                    placeholder="Search" 
+                    name="search" 
+                    is-loading={isLoading} 
+                    onchange={handleChange}
+                    onkeydown={handleKeyDown}
+                ></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6" padding="around-medium">
+                <lightning-button
+                    variant="brand"
+                    label="Search"
+                    icon-name="utility:search"
+                    icon-position="right"
+                    onclick={fetchContacts}
+                    disabled={isButtonDisabled}
+                >
+                </lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+
+    <template if:true={isContactsAvailable}>
+        <lightning-card variant="narrow" icon-name="standard:contact" padding="around-medium">
+            <h1 slot="title">Contacts</h1>
+            <lightning-datatable
+                key-field="Id"
+                data={contacts}
+                columns={columns}
+                hide-checkbox-column
+            ></lightning-datatable>
+        </lightning-card>
+    </template>
+
+    <template if:true={isContactsNotAvailable}>
+        <lightning-card variant="narrow" icon-name="standard:contact">
+            <h1 slot="title">No Contacts Found</h1>
+        </lightning-card>
+    </template>
+</template>
